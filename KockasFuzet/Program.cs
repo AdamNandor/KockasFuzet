@@ -50,7 +50,12 @@ namespace KockasFuzet
                         new SzamlaView().CreateSzamlaView();
                         break;
                     case "5":
-                        
+                        Szamla szamla = new Szamla();
+
+                        szamla.Id = int.Parse(Console.ReadLine());
+
+                        string eredmeny = new SzamlaController().UpdateSzamla(szamla);
+                        Console.WriteLine(eredmeny);
                         break;
                     case "6":
                         Console.WriteLine("Adja meg az azonosítót:");
