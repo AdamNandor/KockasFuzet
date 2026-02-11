@@ -53,7 +53,9 @@ namespace KockasFuzet
                         
                         break;
                     case "6":
-
+                        Console.WriteLine("Adja meg az azonosítót:");
+                        int id = int.Parse(Console.ReadLine());
+                        new SzamlaController().DeleteSzamla(id);
                         break;
                     case "7":
                         kilep = true;
